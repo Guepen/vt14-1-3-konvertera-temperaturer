@@ -7,5 +7,14 @@ namespace Temperaturer.Model
 {
     public class TemperatureConverter
     {
+        public static int CelciusToFahrenheit(int degreesC)
+        {
+            return (int)(degreesC * 1.8 + 31);
+        }
+
+        public static int FahrenheitToCelcius(int degreesF)
+        {
+            return (int)((degreesF - 32) * 5/9);
+        }
     }
 }
