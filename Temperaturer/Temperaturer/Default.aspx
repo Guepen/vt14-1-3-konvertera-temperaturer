@@ -24,7 +24,7 @@
         <p>Sluttemperatur</p>
         <asp:TextBox ID="SecondTemp" runat="server" Text=""></asp:TextBox>
         <asp:RequiredFieldValidator ID="NotEmpty2" runat="server" ErrorMessage="Fältet får inte lämnas tomt" ControlToValidate="SecondTemp" Display="Dynamic" Text="*"></asp:RequiredFieldValidator>
-        <asp:CompareValidator ID="GreatherThanFirst" runat="server" ErrorMessage="Sluttemperaturen måste vara högre än starttemperaturen" ControlToValidate="SecondTemp" Operator="GreaterThan" Text="*" ControlToCompare="FirstTemp" Display="Dynamic"></asp:CompareValidator>
+        <asp:CompareValidator ID="GreatherThanFirst" runat="server" ErrorMessage="Sluttemperaturen måste vara högre än starttemperaturen" ControlToValidate="SecondTemp" Operator="GreaterThan" Text="*" ControlToCompare="FirstTemp" Display="Dynamic" Type="Integer"></asp:CompareValidator>
         <asp:CompareValidator ID="TypeCheck2" runat="server" ErrorMessage="Du måste ange ett heltal" ControlToValidate="SecondTemp" Type="Integer" Operator="DataTypeCheck" Display="Dynamic" Text="*"></asp:CompareValidator>
     </div>
 
@@ -48,7 +48,12 @@
     </div>
         <%--Knapp för konvertering--%>
     <div>
-        <asp:Button ID="Send" runat="server" Text="Konvertera"/>
+        <asp:Button ID="Send" runat="server" Text="Konvertera" OnClick="Send_Click"/>
+    </div>
+
+    <%-- Tabellen --%>
+    <div>
+        <asp:Table ID="TempTable" runat="server" Visible="false"></asp:Table>
     </div>
     </form>
 </body>
