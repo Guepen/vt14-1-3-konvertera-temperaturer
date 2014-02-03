@@ -1,0 +1,46 @@
+﻿form {
+    margin-left:35px;
+    margin-top:20px;
+    font-style:italic;
+}
+
+.Table {
+    max-height:200px;
+    border:2px solid black;
+    margin-left:20%;
+    margin-top:-15%;
+    overflow-y:auto;
+}
+
+.tHead {
+    background-color:orange;
+    padding:2px;
+}
+
+.Table th {
+    background-color:orange;
+    width:100px;
+}
+
+.Table td {
+    text-align:center;
+    vertical-align:middle;
+}
+
+#ThirdTemp {
+    margin-bottom:15px;
+}
+
+h1 {
+    border-bottom:20px solid orange;
+    width:370px;
+}
+
+button {
+    margin-top:15px;
+}
+
+#ValidationSummary1 {
+    color:red;
+    font-weight:bold;
+}

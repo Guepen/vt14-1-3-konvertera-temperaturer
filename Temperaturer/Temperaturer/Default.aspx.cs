@@ -23,6 +23,7 @@ namespace Temperaturer
                 var firstTemp = int.Parse(FirstTemp.Text);
                 var secondTemp = int.Parse(SecondTemp.Text);
                 var stageValue = int.Parse(ThirdTemp.Text);
+                
 
                if (CF.Checked == true)
                {
@@ -37,6 +38,8 @@ namespace Temperaturer
                     TempTable.Rows.Add(thr);
                     thr.Cells.Add(thc1);
                     thr.Cells.Add(thc2);
+
+                    thr.CssClass = "tHead";
                    
 
 

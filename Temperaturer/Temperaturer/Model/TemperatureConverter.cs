@@ -9,7 +9,7 @@ namespace Temperaturer.Model
     {
         public static int CelciusToFahrenheit(int degreesC)
         {
-            return (int)(degreesC * 1.8 + 31);
+            return (int)(degreesC * 1.8 + 32);
         }
 
         public static int FahrenheitToCelcius(int degreesF)
